@@ -1,0 +1,237 @@
+body{
+  background-color: rebeccapurple;
+}
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-out;
+}
+
+.fade-exit {
+  display: none;
+}
+
+article {
+  display: block;
+  position: relative;
+}
+
+h3.entry-title {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  a {
+    color: #fff;
+  }
+}
+
+.article-meta span {
+  color: #d7d7d7;
+}
+
+.top-articles-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-image {
+  width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.post-image {
+  position: relative;
+  background-image: url("http://nerubian.nanoagency.co/wp-content/uploads/2017/07/news26.jpg");
+}
+
+.bg-rgb {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: #000;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.article-meta .left-article-meta {
+  margin-right: 10px;
+}
+
+.article-meta .left-article-meta span,
+.article-meta .right-article-meta span {
+  margin-left: 5px;
+}
+
+.post-cat a {
+  background: #e51515;
+  padding: 4px 8px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+}
+
+.post-tran .article-content {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  width: calc(100% - 10px);
+}
+
+.left-top .post-image {
+  height: 445px;
+}
+
+.left-top,
+.right-top {
+  width: 50%;
+  margin: 0 1px;
+}
+
+.right-top {
+  display: flex;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.list-top-articles,
+.list-newest-articles {
+  height: 100%;
+  width: 50%;
+}
+
+.right-top .list-top-articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-top .list-top-articles .post-tran .article-content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: calc(100% - 10px);
+}
+
+.right-top .list-top-articles article.post-item.post-tran {
+  height: 33.33%;
+}
+
+.right-top .list-top-articles article .post-image {
+  height: 100%;
+}
+
+.right-top .list-top-articles .article-tran.hover-share-item {
+  height: 100%;
+  .article-meta {
+    font-size: 13px;
+    color: #fff;
+    span.byline {
+      margin-right: 10px;
+    }
+  }
+}
+
+.right-top .list-top-articles h3.entry-title {
+  font-size: 14px;
+  line-height: 18px;
+  a {
+    color: #fff;
+  }
+}
+
+.right-top .list-top-articles article.post-item.post-tran {
+  margin-bottom: 2px;
+}
+
+.right-top .list-top-articles article.post-item.post-tran:last-child {
+  margin-bottom: 0;
+}
+
+.list-title {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #dcdcdc;
+  color: #282828;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 15px;
+  font-weight: bold;
+  height: 45px;
+  line-height: 37px;
+  padding: 0 0 0 15px;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+.list-newest-articles {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.top-hot-news {
+  color: #e51515;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+ul.top-hot-news li {
+  list-style: none !important;
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+ul.top-hot-news .hot-news-link {
+  color: #282828;
+  background-color: #f9f9f9;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 7px 10px;
+  display: block;
+  font-weight: 500;
+  transition: color, background-color 75ms, 75ms;
+  -webkit-transition: color, background-color 75ms, 75ms;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+
+.right-box-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pin-category {
+  margin-right: 10px;
+}
+
+.right-box-title-link {
+  display: flex;
+  color: #e51515;
+  font-size: 14px;
+  position: relative;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  span {
+    margin-right: 5px;
+  }
+}
